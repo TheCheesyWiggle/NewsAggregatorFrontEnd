@@ -34,6 +34,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Crypto News'),
+        backgroundColor: Colors.orange,
       ),
       body: Visibility(
         visible: isLoaded,
@@ -47,11 +48,7 @@ class _HomePageState extends State<HomePage> {
                   Container(
                     height: 50,
                     width: 50,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(12),
-                      color: Colors.grey,
-                      //where thumbnail will be
-                    ),
+                    child: Image.asset('images/btc.png'),
                   ),
                   SizedBox(width: 16),
                   Expanded(
